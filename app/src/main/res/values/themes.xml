@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TwitterClone" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/twitter_blue</item>
+        <item name="colorPrimaryVariant">@color/twitter_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/twitter_blue</item>
+        <item name="colorSecondaryVariant">@color/twitter_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="l">true</item>
+
+    </style>
+
+    <style name="Theme.TwitterClone" parent="Base.Theme.TwitterClone">
+        <item name="android:navigationBarColor">#B3FFFFFF</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+    </style>
+
+    <style name="Theme.TwitterClone.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TwitterClone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TwitterClone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

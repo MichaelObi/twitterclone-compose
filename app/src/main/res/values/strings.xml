@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TwitterClone</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="notifications">Notifications</string>
+    <string name="messages">Messages</string>
+</resources>
