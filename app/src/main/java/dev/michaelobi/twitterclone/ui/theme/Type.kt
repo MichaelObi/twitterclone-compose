@@ -16,23 +16,27 @@ val Typography = Typography(
     h3 = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Bold,
-        fontSize = 22.sp
+        fontSize = 22.sp,
+        color = TwitterTextPrimaryColor
     ),
     h4 = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Bold,
-        fontSize = 20.sp
+        fontSize = 20.sp,
+        color = TwitterTextPrimaryColor
     ),
     h5 = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Bold,
         fontSize = 18.sp,
-        letterSpacing = (-0.15).sp
+        letterSpacing = (-0.15).sp,
+        color = TwitterTextPrimaryColor
     ),
     h6 = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Bold,
-        fontSize = 16.sp
+        fontSize = 16.sp,
+        color = TwitterTextPrimaryColor
     ),
     /* Other default text styles to override
     button = TextStyle(
