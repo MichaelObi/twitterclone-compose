@@ -15,12 +15,27 @@ import dev.chrisbanes.accompanist.insets.LocalWindowInsets
 import dev.chrisbanes.accompanist.insets.ProvideWindowInsets
 import dev.chrisbanes.accompanist.insets.toPaddingValues
 import dev.michaelobi.twitterclone.R
+import dev.michaelobi.twitterclone.ui.components.SectionDivider
+import dev.michaelobi.twitterclone.ui.theme.SectionDividerColor
 import dev.michaelobi.twitterclone.ui.theme.TwitterCloneTheme
 
 @Composable
 fun ExploreScreen() {
     Column(modifier = Modifier.fillMaxSize()) {
         SearchBar()
+        SectionDivider()
+        Surface(color = MaterialTheme.colors.surface) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 12.dp)
+            ) {
+                Text(
+                    text = "Trends for you",
+                    style = MaterialTheme.typography.h5,
+                )
+            }
+        }
     }
 }
 
@@ -28,6 +43,7 @@ fun ExploreScreen() {
 private fun SearchBar() {
     TopAppBar(
         backgroundColor = MaterialTheme.colors.surface,
+        elevation = 0.dp,
         contentPadding = LocalWindowInsets.current.systemBars.toPaddingValues(
             bottom = false,
             additionalHorizontal = 20.dp
@@ -52,15 +68,21 @@ private fun SearchBar() {
                 .weight(1f)
                 .align(Alignment.CenterVertically)
         )
-
-        Icon(
-            painter = painterResource(id = R.drawable.ic_explore_settings),
-            contentDescription = "Search settings",
-            modifier = Modifier.align(Alignment.CenterVertically)
-        )
+        IconButton(
+            onClick = { /*TODO*/ },
+            modifier = Modifier.then(
+                Modifier
+                    .size(32.dp)
+                    .align(Alignment.CenterVertically)
+            ),
+        ) {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_explore_settings),
+                contentDescription = "Search settings",
+            )
+        }
     }
 }
-
 
 @Composable
 fun SearchTextField(
