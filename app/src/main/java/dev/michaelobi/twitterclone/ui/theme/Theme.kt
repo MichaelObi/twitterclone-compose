@@ -12,7 +12,7 @@ private val LightColorPalette = lightColors(
     primaryVariant = TwitterBlue,
     secondary = TwitterBlue,
     surface = Color.White,
-    onSurface = TwitterSurfaceContentColor,
+    onSurface = TwitterBlue,
     background = TwitterBackground,
     onBackground = TwitterBlueGray,
 
